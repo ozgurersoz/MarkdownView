@@ -1,0 +1,4 @@
+module MarkdownView {
+    header "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownView-Swift.h"
+    requires objc
+}

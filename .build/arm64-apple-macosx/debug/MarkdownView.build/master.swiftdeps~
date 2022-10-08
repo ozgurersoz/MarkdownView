@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)"
+options: "7ee5dac05af3808c720765bd227908ac325fc9c380692b7d367271c521fcfe12"
+build_start_time: [1665234622, 558609008]
+build_end_time: [1665234627, 12081146]
+inputs:
+  "/Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/MarkdownUI.swift": !private [1665234028, 465570926]
+  "/Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/MarkdownView.swift": !private [1665234564, 942859649]

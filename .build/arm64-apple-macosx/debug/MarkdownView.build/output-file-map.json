@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/master.swiftdeps"
+  },
+  "/Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/MarkdownUI.swift": {
+    "dependencies": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownUI.d",
+    "object": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownUI.swift.o",
+    "swiftmodule": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownUI~partial.swiftmodule",
+    "swift-dependencies": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownUI.swiftdeps"
+  },
+  "/Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/MarkdownView.swift": {
+    "dependencies": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownView.d",
+    "object": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownView.swift.o",
+    "swiftmodule": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownView~partial.swiftmodule",
+    "swift-dependencies": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownView.swiftdeps"
+  },
+  "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/resource_bundle_accessor.d",
+    "object": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/resource_bundle_accessor.swiftdeps"
+  }
+}

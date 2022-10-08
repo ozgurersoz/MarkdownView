@@ -1,0 +1,53 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "MarkdownView-debug.module": ["<MarkdownView-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<MarkdownView-debug.module>"]
+  "test": ["<MarkdownView-debug.module>"]
+default: "main"
+nodes:
+  "/Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView_MarkdownView.bundle/Resources":
+    tool: copy-tool
+    inputs: ["/Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/Resources/"]
+    outputs: ["/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView_MarkdownView.bundle/Resources/"]
+    description: "Copying /Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/Resources"
+
+  "<MarkdownView-debug.module>":
+    tool: phony
+    inputs: ["/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownUI.swift.o","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownView.swift.o","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/resource_bundle_accessor.swift.o","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.swiftmodule"]
+    outputs: ["<MarkdownView-debug.module>"]
+
+  "C.MarkdownView-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/MarkdownUI.swift","/Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/MarkdownView.swift","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/DerivedSources/resource_bundle_accessor.swift","<MarkdownView-debug.module-resources>"]
+    outputs: ["/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownUI.swift.o","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownView.swift.o","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/resource_bundle_accessor.swift.o","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "MarkdownView"
+    module-output-path: "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.swiftmodule"
+    import-paths: ["/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug"]
+    temps-path: "/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build"
+    objects: ["/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownUI.swift.o","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownView.swift.o","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/resource_bundle_accessor.swift.o"]
+    other-args: ["-target","arm64-apple-macosx10.13","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/MarkdownView-Swift.h","-color-diagnostics","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/MarkdownUI.swift","/Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/MarkdownView.swift","/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView.build/DerivedSources/resource_bundle_accessor.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "MarkdownView-debug.module-resources":
+    tool: phony
+    inputs: ["/Users/ozgurersoz/Documents/MarkdownView/.build/arm64-apple-macosx/debug/MarkdownView_MarkdownView.bundle/Resources/"]
+    outputs: ["<MarkdownView-debug.module-resources>"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/ozgurersoz/Documents/MarkdownView/Sources/MarkdownView/","/Users/ozgurersoz/Documents/MarkdownView/Package.swift","/Users/ozgurersoz/Documents/MarkdownView/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

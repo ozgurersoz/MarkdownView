@@ -176,7 +176,7 @@ private extension MarkdownView {
 private extension MarkdownView {
   static var styledHtmlUrl: URL = {
     #if SWIFT_PACKAGE
-    let bundle = Bundle.module
+      let bundle = Bundle.module
     #else
     let bundle = Bundle(for: MarkdownView.self)
     #endif
@@ -189,7 +189,7 @@ private extension MarkdownView {
   
   static var nonStyledHtmlUrl: URL = {
     #if SWIFT_PACKAGE
-    let bundle = Bundle.module
+      let bundle = Bundle.module
     #else
     let bundle = Bundle(for: MarkdownView.self)
     #endif

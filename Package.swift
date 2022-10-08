@@ -12,7 +12,7 @@ let package = Package(
         .library(
             name: "MarkdownView",
             targets: ["MarkdownView"]
-        ),
+        )
     ],
     targets: [
         .target(
@@ -22,10 +22,7 @@ let package = Package(
                 "Resources/main.js.LICENSE.txt"
             ],
             resources: [
-                .copy("Resources/styled.html"),
-                .copy("Resources/non_styled.html"),
-                .copy("Resources/main.js"),
-                .copy("Resources/main.css")
+                .copy("Resources")
             ]
         )
     ]
